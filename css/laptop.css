@@ -1,0 +1,297 @@
+* {
+    margin: 0px;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section > .container{
+    width: 1270px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+}
+
+#nav-bar {
+    text-align: center;
+}
+#banner {
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 400px;
+}
+#banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#banner h1,
+#banner p{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    top: 70px;
+}
+#banner p{
+    margin-top: 55px;
+}
+.container-nav{
+    padding: 30px
+}
+#nav-bar .container-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 20px;
+    position: relative;
+}
+#nav-bar .container-nav a i{
+    color: blue;
+}
+#nav-bar .container-nav a::after{
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    height: 135%;
+}
+
+#nav-bar .container-nav a:nth-last-child(1)::before{
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 120px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    height: 135%;
+}
+#about .container{
+    display: flex;
+    justify-content: space-around;
+
+}
+#target, #personal-info{
+    width: 50%;
+    margin-top: 50px!important;
+}
+#target p,
+#personal-info ul{
+    margin-top: 20px
+}
+#personal-info ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+#personal-info ul li span{
+    font-weight: 600;
+}
+#personal-info h1{
+    padding-left: 40px;
+}
+.icon-info{
+    padding-left: 40px;
+    margin-top: 20px;
+    color: blue;
+}
+.container-group{
+    border: 1px solid #ccc;
+    width: 365px;
+    margin: 0 10px;
+    min-height: 185px;
+}
+.exp-header{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.exp-header h1{
+    padding-top: 15px;
+}
+.exp-header i{
+    font-size: 50px;
+}
+.exp-body{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+.exp-body ul li{
+    margin-top: 50px;
+}
+.time{
+    margin-top: 5px;
+}
+.time span{
+    background-color: blue;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 20px;
+}
+.description{
+    margin-top: 3px;
+}
+.favorite{
+    display: flex;
+    justify-content: space-between;
+}
+.favorite .icon i{
+    font-size: 20px;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 50%;
+}
+.favorite .icon p{
+    color: black;
+    width: 75px;
+}
+.line-group{
+    display: flex;
+}
+.line{
+    margin-top: 5px;
+    margin-right: 7px;
+    background-color: rgba(0, 0, 225, 0.5);
+    height: 2px;
+    border-radius: 5px;
+    width: 50px;
+}
+.content{
+    width: 1270px;
+    margin: auto;
+    display: block;
+    padding: 30px 50px;
+}
+.certificate-group{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.certificate-item img{
+    width: 200px;
+    height: 110px;
+    margin-right: 15px;
+}
+.certificate-item{
+    display: flex;
+    margin: 15px 10px;
+    position: relative;
+}
+.certificate-item:nth-child(1)::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -10px;
+    background-color: red;
+    height: 110px;
+    width: 1px; 
+}
+.certificate-item:nth-child(1)::before{
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    right: -620px;
+    background-color: red;
+    height: 1px;
+    width: 1150px; 
+}
+.certificate-name{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.project{
+    margin-top: 50px;
+    display: flex;
+}
+.project-img{
+    width: 100%;
+    max-width: 375px;
+    border-bottom: 1px solid #ccc;
+}
+.container-project{
+    border: 1px solid #ccc;
+    max-width: 375px;
+    margin-right: 10px;
+}
+.project-name{
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.project-nav,
+.project-group{
+    display: flex;
+    justify-content: space-around;
+}
+.project-group{
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.project-nav{
+    margin-top: 3px;
+}
+.project-nav i{
+    margin-right: 10px;
+}
+.project-time{
+    padding: 3px 10px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+}
+.project-des{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.project-text{
+    width: 200px;
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.footer-list li{
+    margin: 10px;
+}
+.footer-list li i{
+    font-size: 20px;
+    color:rgba(0, 0, 225, 0.6)
+}
+
+.hide{
+    display: none;
+}
+.min-height{
+    min-height: 515px;
+}
+.view-more{
+    display: none;
+    margin-left: 25px;
+    padding: 8px 10px;
+    background-color: rgba(255, 255, 0, 0.5);
+    width: 125px;
+    border-radius: 30px;
+}
+.container-group:hover .view-more{
+    display: block;
+    cursor: pointer;
+}
+.project-name a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blue;
+}
+.col{
+    display: flex;
+    margin-top: 20px;
+}
+.container{
+    padding: 20px;
+    display: flex;
+}
+.timeline-group,
+.team-group,
+.goals-group{
+    background-color: rgb(101, 251, 254);
+    padding: 20px;
+    margin-right: 20px;
+}
+.goals-group{
+    flex-basis: 70%;
+}
+.team-group{
+    flex-basis: 30%;
+}
+.timeline-group h1,
+.team-group h1,
+.goals-group h1{
+    color: blue;
+}
+.timeline-item,
+.team-item,
+.goal-item{
+    display: flex;
+    margin: 20px;
+}
+.team-item i,
+.goals-icon i{
+    font-size: 24px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.timeline-group{
+    margin-top: 20px;
+    height: 700px;
+    width: 50%;
+}
+.timeline-stt{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.timeline-content{
+    font-size: 18px;
+    margin-top: 8px;
+}
+.scopes-item{
+    display: flex;
+}
+.scopes-item div h3{
+    text-transform: uppercase;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container{
+        display: block;
+    }
+    .col{
+        display: block;
+    }
+    .team-group{
+        margin-top: 20px;
+    }
+    .scopes-item{
+        display: block;
+    }
+    .scopes-item div{
+        margin-top: 10px;
+    }
+    .team-name{
+        margin-top: 10px;
+    }
+    .timeline-group{
+        width: 100%;
+    }
+}
+@media (max-width: 739px) {
+    .container{
+        display: block;
+    }
+    .col{
+        display: block;
+    }
+    .team-group{
+        margin-top: 20px;
+    }
+    .scopes-item{
+        display: block;
+    }
+    .team-item,
+    .goal-item{
+        display: block;
+    }
+    .team-icon i,
+    .goals-icon i{
+        width: 100%;
+        text-align: center;
+    }
+    .timeline-group{
+        height: 100%;
+    }
+}

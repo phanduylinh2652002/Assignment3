@@ -1,0 +1,76 @@
+@media (max-width: 739px) {
+    
+    #banner img{
+        width: 125%;
+        height: 300px;
+        zoom: 2;
+    }
+    #banner h1, #banner p{
+        width: 110%;
+        font-size: 45px;
+    }
+    #nav-bar .container-nav a::after{
+        display: none;
+    }
+    #nav-bar .container-nav a:nth-last-child(1)::before{
+        display: none;
+    }
+    #nav-bar .container-nav a{
+        display: block;
+        text-align: left;
+    }
+    .container-nav a:nth-child(3),
+    .container-nav a:nth-child(3) span{
+        display: none!important;
+    }
+    #about .container{
+        display: block;
+    }
+    #target, 
+    #personal-info{
+        width: 100%;
+    }
+    section > .container{
+        padding: 0;
+    }
+    #target{
+        padding-top: 45px;
+    }
+    #personal-info h1{
+        padding: 0;
+    }
+    #personal-info ul{
+        padding-left: 0;
+    }
+    .icon-info{
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .certificate-group{
+        display: block;
+    }
+    .certificate-item{
+        display: block; 
+        margin-top: 20px;
+        margin-left: 190px;
+    }
+    .certificate-item:nth-child(1)::after{
+        display: none;
+    }
+    .certificate-item:nth-child(1)::before,
+    .certificate-item:nth-child(2)::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: -175px;
+        background-color: red;
+        height: 1px;
+        width: 580px;
+    }
+    .project{
+        display: block;
+    }
+    .footer-list{
+        width: 95%;
+    }
+}

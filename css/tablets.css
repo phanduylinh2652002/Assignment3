@@ -1,0 +1,29 @@
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container-group{
+        min-height: 475px;
+    }
+    .container-nav a:nth-child(3) span{
+        display: none;
+    }
+    .certificate-group{
+        display: inline-block;
+        
+    }
+    .certificate-item{
+        display: inline-block;
+
+        width: 450px;
+        height: 290px;
+    }
+    .certificate-item img{
+        width: 100%;
+        height: 190px;
+    }
+    .certificate-item:nth-child(1)::before{
+        right: -475px;
+        width: 925px;
+    }
+    .certificate-item:nth-child(1)::after{
+        height: 270px;
+    }
+}
